@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+# Refactoring challenge
+
+Here you can find example of overcomlicated React UI component implementation. The goal of the challenge is to come up with a plan for refactoring.
+
+### Input
+
+This project implements a simplified version of Cliniserve Flow app onboarding location screen. Part of Cliniserve Flow app is communication between nurses and patients. The screen in this example is where nurses can restrict a location area from which they would like to receive patient requests. By checking a bed nurses confirm they will care about patients located at that bed.
+
+Hospital location structure is the following:
+* Areas
+  * Rooms
+    * Beds
+
+### High-level problems
+
+1. Checkboxes are not working reliably
+2. Component is not easily extendable: hard to add a level between areas and rooms, hard to add a checkbox "Check/Uncheck all"
+3. Making changes to existing codebase is tedious and time-consuming
+4. No trust in the code because it's not covered with autotests
+
+### Deliverables
+
+1. List of bad design approaches
+2. List of proposals how to improve the design of the code
+
+# Further notes
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,26 +43,6 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 

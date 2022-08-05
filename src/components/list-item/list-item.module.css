@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+
+.expandable {
+  width: 100px;
+}
+
+.name {}
