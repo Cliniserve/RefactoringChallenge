@@ -11,9 +11,13 @@ Hospital location structure is the following:
   * Rooms
     * Beds
 
+In the future we would like to extend the structure of location to make it more flexible, at least for the following use-cases:
+- adding levels of locations to trees, for example sub-areas
+- allowing locations to follow more flexible structure, for example beds to be part of an area without being inside a room
+
 ### High-level problems
 
-1. Checkboxes are not working reliably
+1. Checkboxes are not working reliably, checking and unchecking children doesnt always leads to the parent being checked/unchecked
 2. Component is not easily extendable: hard to add a level between areas and rooms, hard to add a checkbox "Check/Uncheck all"
 3. Making changes to existing codebase is tedious and time-consuming
 4. No trust in the code because it's not covered with autotests
@@ -21,7 +25,7 @@ Hospital location structure is the following:
 ### Deliverables
 
 1. List of bad design approaches
-2. List of proposals how to improve the design of the code
+2. Proposal how to improve the design of the code
 
 # Further notes
 
