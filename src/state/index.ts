@@ -5,14 +5,12 @@ const areas: Area[] = [
     id: 'area-1',
     name: 'Area 1',
     isChecked: false,
-    isExpanded: false,
     hasCheckedChildren: false,
     rooms: [
       {
         id: 'room-1.1',
         name: 'Room 1.1',
         isChecked: false,
-        isExpanded: false,
         hasCheckedChildren: false,
         beds: [
           {
@@ -30,7 +28,6 @@ const areas: Area[] = [
         id: 'room-1.2',
         name: 'Room 1.2',
         isChecked: false,
-        isExpanded: false,
         hasCheckedChildren: false,
         beds: [
           {
@@ -49,14 +46,12 @@ const areas: Area[] = [
     id: 'area-2',
     name: 'Area 2',
     isChecked: false,
-    isExpanded: false,
     hasCheckedChildren: false,
     rooms: [
       {
         id: 'room-2.1',
         name: 'Room 2.1',
         isChecked: false,
-        isExpanded: false,
         hasCheckedChildren: false,
         beds: [
           {
